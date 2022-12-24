@@ -28,12 +28,14 @@ function onBallClicked(e) {
 const audio = new Audio("Honk.mp3");
 
 function score() {
-
     count++
     document.querySelector(".number").innerText = count
         ;
+
+    if (count == 10) alert("YOU KILLED EM ALL!")
 }
+
 
 function refreshPage() {
     window.location.reload();
-} 
+}
